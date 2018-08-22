@@ -20,6 +20,8 @@ Hint: Puedes utilizar el validador de la w3c para verificar el resultado
 
 ~~~html
 <p> <span> hola </p> </span>
+
+Span se debe cerrar dentro del parrafo <p>
 ~~~
 
 ##Ejercicio 2:
@@ -40,6 +42,7 @@ Hint: Puedes utilizar el validador de la w3c para verificar el resultado
 </html>
 ~~~
 
+BOY ESTA ANTES DEL HEAD
 ##Ejercicio 3:
 ¿Qué le falta al siguiente código para que no se vean esos caracteres extraños en la página?
 
@@ -54,7 +57,7 @@ Hint: Puedes utilizar el validador de la w3c para verificar el resultado
 </body>
 </html>
 ~~~
-
+FALTA EN EL HEAD <meta charset="utf-8">
 ![img metacharset](https://github.com/DesafioLatam/E1CP1A1/blob/master/images/13500_p.png?raw=true)
 
 ##Ejercicio 4:
@@ -74,6 +77,7 @@ Si deseo mostrar en la pestaña del navegador el nombre de la página. ¿Qué le
 </body>
 </html>
 ~~~
+DEBE PONER <title>Desafio Latam</title> EN EL HEAD
 
 ##Ejercicio 5:
 ¿Qué error hay en la estructura de la siguiente página web?
@@ -84,7 +88,8 @@ Si deseo mostrar en la pestaña del navegador el nombre de la página. ¿Qué le
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<link rel="stylesheet" href="">
+  <link rel="stylesheet" type="text/css"
+  href="styles.css">
 </head>
 	<h1> Título 1 </h1>
 <body>
@@ -267,8 +272,8 @@ Corrige la estructura de la siguiente página web.
 </head>
 <body>
 
-	<a href="www.desafiolatam.com">link a Desafío Latam!</a>
-	<img alt="../logo.png">
+	<a href="htmls://www.desafiolatam.com">link a Desafío Latam!</a>
+	<img scr="../logo.png">
 
 </body>
 </html>
@@ -427,7 +432,7 @@ Corrige los errores para que el color por defecto sea amarillo y el color del se
 <body>
 	<div>
 		<p> Hellowww </p>
-		<p class="color:red"> Lorem ipsum dolor sit amet. </p>
+		<p stye="color:red"> Lorem ipsum dolor sit amet. </p>
 	</div>
 </body>
 </html>
@@ -466,7 +471,9 @@ Agrega al código el CSS necesario para que todos las etiquetas divs tengan colo
 <html>
 <head>
 	<meta charset="utf-8">
-	<style>
+
+  }
+  <style>
 		p {
 			color: red;
 		}
@@ -501,11 +508,12 @@ Probar con el navegador achicando la pantalla, ¿Cuál es la diferencia?
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+  <title></title>
+
 </head>
 <body>
 
-	<img src="../images/logo.png" alt="logo desafio latam" >
+	<img src="../images/logo.png"  alt="logo desafio latam" >
 	<img src="../images/logo.png" alt="logo desafio latam" >
 
 </body>
